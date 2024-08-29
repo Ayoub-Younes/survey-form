@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+<h1 id="title">Spectrum Survey Form</h1>
+<p id="description">Please fill out the survey</p>
+<form id="survey-form">
+  <fieldset class="info">
+  <label id="name-label" for="name">Name:<input id="name" name="name" type="text"  placeholder="Adam"/ required></label>
+  
+  <label id="email-label" for="email">Email:<input id="email" name="email" type="email" placeholder="Adam123@hotmail.com" /required></label>
+  <label id="number-label" for="number">Age:<input id="number" name="age" type="number" min="12" max="99" placeholder="18"/required></label>
+  
+  </fieldset> 
+  <fieldset>
+  <label for="dropdown">How did you hear about us?</label>
+  <select id="dropdown" name="dropdown">
+    <option>--Please choose an option--</option>
+    <option>Search engine (Google, Yahoo etc.)</option>
+    <option>Recommended by a friend or colleague</option>
+    <option>Social media</option>
+    <option>Blog or publication</option>
+    <option>Other</option>
+  </select>
+  </fieldset>
+  <fieldset>
+  <p id="satisfaction">How do you feel about our company
+  <label for="satisfied" ><input id="satisfied" name="satisfied-neutral-dissatisfied" type="radio" value="Satisfied" checked>Satisfied</label>
+  <label for="neutral"><input id="neutral" name="satisfied-neutral-dissatisfied" type="radio" value="neutral">Neutral</label>
+  <label for="dissatisfied"><input id="dissatisfied" name="satisfied-neutral-dissatisfied" type="radio" value="dissatisfied">Dissatisfied</label>
+  </fieldset>
+  <fieldset>
+  <p>What are your favourite features of Spectrum?</p>
+  <label for="p-types"><input id="ptypes" name="p-types" type="checkbox" value="p-types">Product type</label>
+  <label for="p-quality"><input id="p-quality" name="p-quality" type="checkbox" value="p-quality">Product quality</label>
+  <label for="p-price"><input id="p-price" name="p-price" type="checkbox" value="p-price">Product price</label>
+
+  <label for="customer-service"><input id="customer-service" name="customer-service" type="checkbox" value="customer-service">Customer service</label>
+  </fieldset>
+  <fieldset>
+  <label for="comments">Any comments or suggestions</label>
+  <textarea id="comments" name="comments" cols="40" rows="4"></textarea>
+  <button id="submit">Submit</button>
+  </fieldset>
+</form>
+</body>
+</html>

@@ -38,25 +38,25 @@
 
     <fieldset>
       <p id="satisfaction">How do you feel about our company?</p>
-      <label><input name="satisfaction" type="radio" value="Satisfied" checked>Satisfied</label>
-      <label><input name="satisfaction" type="radio" value="Neutral">Neutral</label>
-      <label><input name="satisfaction" type="radio" value="Dissatisfied">Dissatisfied</label>
+      <label for="satisfied" ><input id="satisfied" name="satisfied-neutral-dissatisfied" type="radio" value="satisfied" checked>Satisfied</label>
+      <label for="neutral"><input id="neutral" name="satisfied-neutral-dissatisfied" type="radio" value="neutral">Neutral</label>
+      <label for="dissatisfied"><input id="dissatisfied" name="satisfied-neutral-dissatisfied" type="radio" value="dissatisfied">Dissatisfied</label>
     </fieldset>
 
     <fieldset>
       <p>What are your favourite features of Spectrum?</p>
-      <label><input id="ptypes" name="features" type="checkbox" value="p-types">Product type</label>
-      <label><input id="pquality" name="features" type="checkbox" value="p-quality">Product quality</label>
-      <label><input id="pprice" name="features" type="checkbox" value="p-price">Product price</label>
-      <label><input id="cservice" name="features" type="checkbox" value="customer-service">Customer service</label>
+      <label for="p-types"><input id="ptypes" name="p-types" type="checkbox" value="p-types">Product type</label>
+      <label for="p-quality"><input id="p-quality" name="p-quality" type="checkbox" value="p-quality">Product quality</label>
+      <label for="p-price"><input id="p-price" name="p-price" type="checkbox" value="p-price">Product price</label>
+      <label for="customer-service"><input id="customer-service" name="customer-service" type="checkbox" value="customer-service">Customer service</label>
     </fieldset>
 
     <fieldset>
       <label for="comments">Any comments or suggestions</label>
       <textarea id="comments" name="comments" cols="40" rows="4"></textarea>
+      <button id="submit">Submit</button>
     </fieldset>
-
-    <button id="submit">Submit</button>
+    
   </form>
 </body>
 </html>

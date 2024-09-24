@@ -3,69 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spectrum Survey Form</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body id="body">
-  <img id="background" src="https://4kwallpapers.com/images/walls/thumbs_3t/3560.jpg" alt="background">
-  <header>
-    <h1 id="title">Spectrum Survey Form</h1>
-    <p id="description">Please fill out the survey</p>
-  </header>
-  <main>
-    <form id="survey-form">
-      <fieldset class="info">
-        <legend>Personal Information</legend>
-        <label id="name-label" for="name"><span class="label-text">Name:</span>
-          <input id="name" name="name" type="text" placeholder="Adam" required>
-        </label>
-        <label id="email-label" for="email"><span class="label-text">Email:</span>
-          <input id="email" name="email" type="email" placeholder="Adam123@hotmail.com" required>
-        </label>
-        <label id="number-label" for="number"><span class="label-text">Age:</span>
-          <input id="number" name="age" type="number" min="12" max="99" placeholder="18" required>
-        </label>
-      </fieldset>
+<body>  
+<h1 id="title">Spectrum Survey Form</h1>
+<p id="description">Please fill out the survey</p>
+<form id="survey-form">
+  <fieldset class="info">
+  <label id="name-label" for="name">Name:<input id="name" name="name" type="text"  placeholder="Adam"/ required></label>
+  
+  <label id="email-label" for="email">Email:<input id="email" name="email" type="email" placeholder="Adam123@hotmail.com" /required></label>
+  <label id="number-label" for="number">Age:<input id="number" name="age" type="number" min="12" max="99" placeholder="18"/required></label>
+  
+  </fieldset> 
+  <fieldset>
+  <label for="dropdown">How did you hear about us?</label>
+  <select id="dropdown" name="dropdown">
+    <option>--Please choose an option--</option>
+    <option>Search engine (Google, Yahoo etc.)</option>
+    <option>Recommended by a friend or colleague</option>
+    <option>Social media</option>
+    <option>Blog or publication</option>
+    <option>Other</option>
+  </select>
+  </fieldset>
+  <fieldset>
+  <p id="satisfaction">How do you feel about our company
+  <label for="satisfied" ><input id="satisfied" name="satisfied-neutral-dissatisfied" type="radio" value="Satisfied" checked>Satisfied</label>
+  <label for="neutral"><input id="neutral" name="satisfied-neutral-dissatisfied" type="radio" value="neutral">Neutral</label>
+  <label for="dissatisfied"><input id="dissatisfied" name="satisfied-neutral-dissatisfied" type="radio" value="dissatisfied">Dissatisfied</label>
+  </fieldset>
+  <fieldset>
+  <p>What are your favourite features of Spectrum?</p>
+  <label for="p-types"><input id="ptypes" name="p-types" type="checkbox" value="p-types">Product type</label>
+  <label for="p-quality"><input id="p-quality" name="p-quality" type="checkbox" value="p-quality">Product quality</label>
+  <label for="p-price"><input id="p-price" name="p-price" type="checkbox" value="p-price">Product price</label>
 
-      <fieldset>
-        <legend>Referral Source</legend>
-        <label class="question" for="dropdown">How did you hear about us?</label>
-        <select id="dropdown" name="dropdown">
-          <option value="" disabled selected>--Please choose an option--</option>
-          <option>Search engine (Google, Yahoo etc.)</option>
-          <option>Recommended by a friend or colleague</option>
-          <option>Social media</option>
-          <option>Blog or publication</option>
-          <option>Other</option>
-        </select>
-      </fieldset>
-
-      <fieldset>
-        <legend>Satisfaction Level</legend>
-        <p class="question" id="satisfaction">How do you feel about our company?</p>
-        <label for="satisfied"><input id="satisfied" name="satisfied-neutral-dissatisfied" type="radio" value="satisfied" checked>Satisfied</label>
-        <label for="neutral"><input id="neutral" name="satisfied-neutral-dissatisfied" type="radio" value="neutral">Neutral</label>
-        <label for="dissatisfied"><input id="dissatisfied" name="satisfied-neutral-dissatisfied" type="radio" value="dissatisfied">Dissatisfied</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Favorite Features</legend>
-        <p class="question">What are your favourite features of Spectrum?</p>
-        <label for="p-types"><input id="ptypes" name="p-types" type="checkbox" value="p-types">Product type</label>
-        <label for="p-quality"><input id="p-quality" name="p-quality" type="checkbox" value="p-quality">Product quality</label>
-        <label for="p-price"><input id="p-price" name="p-price" type="checkbox" value="p-price">Product price</label>
-        <label for="customer-service"><input id="customer-service" name="customer-service" type="checkbox" value="customer-service">Customer service</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>Comments</legend>
-        <label class="question" for="comments">Any comments or suggestions</label>
-        <textarea id="comments" name="comments" cols="40" rows="4"></textarea>
-        <button id="submit" type="submit">Submit</button>
-      </fieldset>
-    </form>
-  </main>
+  <label for="customer-service"><input id="customer-service" name="customer-service" type="checkbox" value="customer-service">Customer service</label>
+  </fieldset>
+  <fieldset>
+  <label for="comments">Any comments or suggestions</label>
+  <textarea id="comments" name="comments" cols="40" rows="4"></textarea>
+  <button id="submit">Submit</button>
+  </fieldset>
+</form>
 </body>
 <script>
   

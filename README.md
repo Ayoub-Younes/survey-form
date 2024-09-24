@@ -1,10 +1,10 @@
-# Spectrum Survey Form
+# Machine Learning Technical Documentation Page
 
-This is a simple survey form created as part of my **Responsive Web Design Certification** from FreeCodeCamp.
+This is a technical documentation website created as part of my **Responsive Web Design Certification** from FreeCodeCamp.
 
 ## Overview
 
-The project is built using HTML and CSS, with the goal of collecting user feedback through a form. The form includes fields for name, email, age, and questions about user satisfaction with a fictional company called Spectrum.
+The project is built using HTML and CSS, providing a structured overview of various machine learning topics. It includes sections on linear models, dense layers, convolutional neural networks (CNNs), recurrent neural networks (RNNs), and regularization techniques.
 
 ## Technologies Used
 

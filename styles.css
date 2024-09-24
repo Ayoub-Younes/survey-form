@@ -1,53 +1,122 @@
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/3560.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  display:block;
-  width:100%;
-  height:100vh;
+
+header{
+  margin-bottom: 50px;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  min-height: 100%;
+  min-width: 100%;;
+  z-index: -1;
+  opacity: 0.3;
+
+}
+
+body {
+  font-family: "Roboto";
+  display: none;
+  width: 100%;
+  height: 100%;
   margin: 0;
 }
 
-h1, #description{
-  text-align:center;
-  margin:1em auto;
+h1, #description {
+  text-align: center;
+  margin: 1em auto;
 }
-#description{
-font-family:sans-serif;
-font-weight:bold;
+
+#description {
+  font-family: serif;
+  font-size: 1.25em;
+  font-weight: bold;
 }
-form{
-  width:60vw;
-  margin: 0 auto;
+
+main {
+  width: 60vw;
+  height: auto;
+  margin: 20px auto;
 }
-fieldset{
-padding:16px;
+
+form {
+  display: flex;
+  flex-direction: column;
 }
-label{
-  display:block;
-  margin: 0.5em 0
+
+.question{
+  font-size: 1.1em;
+  margin-bottom: 15px;
 }
-.info input{
-  width:70%;
-  margin-left:0.5em
+
+fieldset {
+  padding: 16px;
+  margin-bottom: 1em;
+  border-radius: 5px;
 }
-#number{
-  margin-left:1.4em;
+
+legend {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 8px; 
+  padding: 0 8px;
+
 }
-select{
-  width:80%
+
+label {
+  display: flex;
+  margin: 0.5em 0;
 }
-button{
-  display:block;
+
+.info input {
+  width: 70%;
+  margin-left: 0.5em;
+}
+.label-text{
+  width: 8%;
+  min-width: 50px;
+}
+input{
+  margin-right: 5px;
+}
+
+select {
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  option{
+    font-size: 0.7rem;
+  }
+}
+
+button {
+  display: block;
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color:rgb(0,123,255, 0.6);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color:rgb(0,123,255, 0.8);
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  resize: vertical;
 }

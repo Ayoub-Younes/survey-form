@@ -7,66 +7,144 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+<img id="background" src="./output.jpg" alt="background">
 <body id="body">
-  <img id="background" src="https://4kwallpapers.com/images/walls/thumbs_3t/3560.jpg" alt="background">
-  <header>
-    <h1 id="title">Spectrum Survey Form</h1>
-    <p id="description">Please fill out the survey</p>
-  </header>
-  <main>
-    <form id="survey-form">
-      <fieldset class="info">
-        <legend>Personal Information</legend>
-        <label id="name-label" for="name"><span class="label-text">Name:</span>
-          <input id="name" name="name" type="text" placeholder="Adam" required>
-        </label>
-        <label id="email-label" for="email"><span class="label-text">Email:</span>
-          <input id="email" name="email" type="email" placeholder="Adam123@hotmail.com" required>
-        </label>
-        <label id="number-label" for="number"><span class="label-text">Age:</span>
-          <input id="number" name="age" type="number" min="12" max="99" placeholder="18" required>
-        </label>
-      </fieldset>
+  <div class="container">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out the survey</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset class="info">
+          <legend>Personal Information</legend>
+          <label id="name-label" for="name"><span class="label-text">Name:</span>
+            <input id="name" name="name" type="text" placeholder="John" required>
+          </label>
+          <label id="email-label" for="email"><span class="label-text">Email:</span>
+            <input id="email" name="email" type="email" placeholder="johndoe@gmail.com" required>
+          </label>
+          <label id="number-label" for="number"><span class="label-text">Age:</span>
+            <input id="number" name="age" type="number" min="12" max="99" placeholder="18" required>
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <legend>Referral Source</legend>
-        <label class="question" for="dropdown">How did you hear about us?</label>
-        <select id="dropdown" name="dropdown">
-          <option value="" disabled selected>--Please choose an option--</option>
-          <option>Search engine (Google, Yahoo etc.)</option>
-          <option>Recommended by a friend or colleague</option>
-          <option>Social media</option>
-          <option>Blog or publication</option>
-          <option>Other</option>
-        </select>
-      </fieldset>
+        <fieldset>
+          <legend>Referral Source</legend>
+          <label class="question" for="dropdown">How did you hear about us?</label>
+          <select id="dropdown" name="dropdown">
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option>Search engine (Google, Yahoo etc.)</option>
+            <option>Recommended by a friend or colleague</option>
+            <option>Social media</option>
+            <option>Blog or publication</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
 
-      <fieldset>
-        <legend>Satisfaction Level</legend>
-        <p class="question" id="satisfaction">How do you feel about our company?</p>
-        <label for="satisfied"><input id="satisfied" name="satisfied-neutral-dissatisfied" type="radio" value="satisfied" checked>Satisfied</label>
-        <label for="neutral"><input id="neutral" name="satisfied-neutral-dissatisfied" type="radio" value="neutral">Neutral</label>
-        <label for="dissatisfied"><input id="dissatisfied" name="satisfied-neutral-dissatisfied" type="radio" value="dissatisfied">Dissatisfied</label>
-      </fieldset>
+        <fieldset class="radio-input input">
+          <legend>Satisfaction Level</legend>
+          <p class="question" id="satisfaction" checked="">How do you feel about our company?</p>
+          <label class="label" for="satisfied"><input id="satisfied" name="satisfied-neutral-dissatisfied" type="radio" value="satisfied" checked><p> Satisfied </p></label>
+          <label class="label" for="neutral"><input id="neutral" name="satisfied-neutral-dissatisfied" type="radio" value="neutral"><p>Neutral</p></label>
+          <label class="label" for="dissatisfied"><input id="dissatisfied" name="satisfied-neutral-dissatisfied" type="radio" value="dissatisfied"><p>Dissatisfied</label>
+        </fieldset>
 
-      <fieldset>
-        <legend>Favorite Features</legend>
-        <p class="question">What are your favourite features of Spectrum?</p>
-        <label for="p-types"><input id="ptypes" name="p-types" type="checkbox" value="p-types">Product type</label>
-        <label for="p-quality"><input id="p-quality" name="p-quality" type="checkbox" value="p-quality">Product quality</label>
-        <label for="p-price"><input id="p-price" name="p-price" type="checkbox" value="p-price">Product price</label>
-        <label for="customer-service"><input id="customer-service" name="customer-service" type="checkbox" value="customer-service">Customer service</label>
-      </fieldset>
+        <fieldset class="input">
+          <legend>Favorite Features</legend>
+          <p class="question">What are your favourite features of Spectrum?</p>
+          <label class="label" for="p-types">
+            <div class="checkbox-wrapper">
+              <input id="p-types" name="p-types" type="checkbox" value="p-types">
+              <svg viewBox="0 0 35.6 35.6">
+                <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+              </svg>
+            </div>
+            <p>Product type</p>
+          </label>
 
-      <fieldset>
-        <legend>Comments</legend>
-        <label class="question" for="comments">Any comments or suggestions</label>
-        <textarea id="comments" name="comments" cols="40" rows="4"></textarea>
-        <button id="submit" type="submit">Submit</button>
-      </fieldset>
-    </form>
-  </main>
-</body>
+          <label class="label" for="p-quality">
+            <div class="checkbox-wrapper">
+              <input id="p-quality" name="p-quality" type="checkbox" value="p-quality">
+              <svg viewBox="0 0 35.6 35.6">
+                <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+              </svg>
+            </div>
+            <p>Product quality</p>
+          </label>
+
+          <label class="label" for="p-price">
+            <div class="checkbox-wrapper">
+              <input id="p-price" name="p-price" type="checkbox" value="p-price">
+              <svg viewBox="0 0 35.6 35.6">
+                <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+              </svg>
+            </div>
+            <p>Product price</p>
+          </label>
+
+          <label class="label" for="customer-service">
+            <div class="checkbox-wrapper">
+              <input id="customer-service" name="customer-service" type="checkbox" value="customer-service">
+              <svg viewBox="0 0 35.6 35.6">
+                <circle class="background" cx="17.8" cy="17.8" r="17.8"></circle>
+                <circle class="stroke" cx="17.8" cy="17.8" r="14.37"></circle>
+                <polyline class="check" points="11.78 18.12 15.55 22.23 25.17 12.87"></polyline>
+              </svg>
+            </div>
+            <p>Customer service</p>
+          </label>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Comments</legend>
+          <label class="question" for="comments">Any comments or suggestions</label>
+          <textarea id="comments" name="comments" cols="40" rows="4"></textarea>
+
+          <button id="submit" type="submit" href="#" class="button" style="--clr: #7808d0">
+            <span class="button__icon-wrapper">
+              <svg
+                viewBox="0 0 14 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="button__icon-svg"
+                width="10"
+              >
+                <path
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+
+              <svg
+                viewBox="0 0 14 15"
+                fill="none"
+                width="10"
+                xmlns="http://www.w3.org/2000/svg"
+                class="button__icon-svg button__icon-svg--copy"
+              >
+                <path
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            Submit
+          </button>
+          
+        </fieldset>
+      </form>
+    </main>
+  </div>
+</body>    
+
 <script>
   
 document.addEventListener('DOMContentLoaded', function() {

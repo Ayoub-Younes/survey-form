@@ -466,6 +466,19 @@ textarea:focus {
 }
 
 
+@media (max-width: 760px) {
+
+  body{
+    padding: 0;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+  
+}
+
+
 @media (max-width: 500px) {
 
   .container{
@@ -479,9 +492,6 @@ textarea:focus {
 
 @media (max-width: 400px) {
 
-  body{
-    padding: 0 1em;
-  }
   .container{
   font-size: 0.85em;
   }
